@@ -10,7 +10,7 @@ const rootReducer = combineReducers({
   todos: todoReducer,
   selectedToDoId: selectReducer
 });
-// const reducer = storage.reducer(rootReducer);
+ const reducer = storage.reducer(rootReducer);
 
 const engine = createEngine("my-save-key");
 
